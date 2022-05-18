@@ -28,7 +28,6 @@ function renderFailedTask(subscriptionProcesses: SubscriptionProcesses[]) {
         .map((sp) => sp.process)
         .filter((process) => process.last_status !== "completed")
         .sort((a, b) => b.started_at - a.started_at);
-        // test
 
     if (failed_tasks.length)
         return (
